@@ -1,0 +1,45 @@
+{
+  "name": "openframe-vlc",
+  "version": "0.0.1",
+  "description": "Openframe extension which adds support for VLC",
+  "main": "extension.js",
+  "scripts": {
+    "install": "./install.sh",
+    "unistall": "./unistall.sh",
+    "lint": "./node_modules/.bin/eslint extension.js test/**",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
+    "test": "npm run lint && ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha",
+    "test-coveralls": "npm run lint && ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- -R spec && npm run coveralls"
+  },
+  "keywords": [
+    "vlc",
+    "video",
+    "photo",
+    "openframe",
+    "raspberry-pi",
+    "art",
+    "artwork",
+    "frame"
+  ],
+  "author": {
+    "name": "Jeremias Volker",
+    "url": "http://jeremiasvolker.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "coveralls": "^2.11.9",
+    "eslint": "^3.0.0",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.3.4",
+    "sinon": "^1.17.2"
+  },
+  "dependencies": {
+    "debug": "^2.2.0",
+    "fs-extra": "^8.1.0",
+    "openframe-extension": "^0.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github:jvolker/Openframe-VLC"
+  }
+}
