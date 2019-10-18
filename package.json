@@ -28,7 +28,7 @@
   "license": "MIT",
   "devDependencies": {
     "coveralls": "^2.11.9",
-    "eslint": "^3.0.0",
+    "eslint": "^4.0.0",
     "istanbul": "^0.4.2",
     "mocha": "^2.3.4",
     "sinon": "^1.17.2"
