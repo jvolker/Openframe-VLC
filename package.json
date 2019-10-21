@@ -8,8 +8,8 @@
     "unistall": "./unistall.sh",
     "lint": "./node_modules/.bin/eslint extension.js test/**",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
-    "test": "npm run lint && ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha",
-    "test-coveralls": "npm run lint && ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- -R spec && npm run coveralls"
+    "test": "npm run lint && ./node_modules/.bin/nyc ./node_modules/.bin/_mocha",
+    "test-coveralls": "npm run lint && ./node_modules/.bin/nyc ./node_modules/.bin/_mocha --report lcovonly -- -R spec && npm run coveralls"
   },
   "keywords": [
     "vlc",
@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "debug": "^4.1.1",
+    "nyc": "^14.1.1",
     "openframe-extension": "^0.1.0"
   },
   "repository": {

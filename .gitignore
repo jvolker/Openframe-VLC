@@ -31,3 +31,4 @@ ehthumbs_vista.db
 $RECYCLE.BIN/
 package-lock.json
 coverage
+.nyc_output
