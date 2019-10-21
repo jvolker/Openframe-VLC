@@ -23,8 +23,8 @@ module.exports = new Extension({
             let command = 'cvlc --loop --no-video-title --quiet ' + tokens['$url']
             // let command = __dirname + '/startVLC.sh ' + tokens['$url']; //
 
-            return command;
+            return command
         },
         'end_command': 'pkill -f vlc'
     }
-});
+})

@@ -1,9 +1,0 @@
-language: node_js
-node_js:
-  - 6
-
-notifications:
-  slack: openframeproject:wGLUMLh5CTAIOGsPUSU8eMf3
-
-script:
-  - npm run test-coveralls

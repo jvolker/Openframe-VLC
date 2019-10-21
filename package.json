@@ -27,15 +27,12 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "coveralls": "^2.11.9",
+    "coveralls": "^3.0.7",
     "eslint": "^4.0.0",
-    "istanbul": "^0.4.2",
-    "mocha": "^2.3.4",
-    "sinon": "^1.17.2"
+    "mocha": "^6.2.2"
   },
   "dependencies": {
-    "debug": "^2.2.0",
-    "fs-extra": "^8.1.0",
+    "debug": "^4.1.1",
     "openframe-extension": "^0.1.0"
   },
   "repository": {
