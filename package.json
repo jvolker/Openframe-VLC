@@ -1,6 +1,6 @@
 {
   "name": "openframe-vlc",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Openframe extension which adds support for VLC",
   "main": "extension.js",
   "scripts": {
