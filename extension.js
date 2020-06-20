@@ -20,7 +20,7 @@ module.exports = new Extension({
         'download': false,
         'start_command': function(options, tokens) {
 
-            let command = 'cvlc --loop --no-video-title --quiet ' + tokens['$url']
+            let command = 'cvlc --loop --no-video-title --quiet --fullscreen ' + tokens['$url']
             // let command = __dirname + '/startVLC.sh ' + tokens['$url']; //
 
             return command
