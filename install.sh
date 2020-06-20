@@ -18,6 +18,8 @@ if [ $os == "Linux" ]; then
     # on RaspberryPi
     if [ $arq == "armv7l" ]; then
       # TODO: install VLC if not already installed
+      # sudo apt install vlc
+      
       echo ""
     fi
 elif [ $os == "Darwin" ]; then
